@@ -28,9 +28,10 @@ if ($err) {
 
   // TODO to crate 2 groups
   // sudo - crate/separate 2 groups (bigger than 1)
+  // sudo - foreach + if
   $list2Key = array('unit', 'sq', 'num', 'date');
   foreach($list2Keys as $key) {
-      if(isset($list[num] > 1) {
+      if($list[num] > 1) {
           $list2[num] = $list[num];
           unset($list[num]);
       } else {
@@ -53,7 +54,7 @@ if ($err) {
 <!-- If date looks like this -->
 <!-- data Object
 (
-    [list1] => Array
+    [list] => Array
         (
             [0] => stdClass Object
                 (

@@ -25,51 +25,6 @@ if ($err) {
   throw new Exception(curl_error($ch));
 } else {
   $data = json_decode($response);
-
-  // TODO to crate 2 groups
-  // sudo - crate/separate 2 groups (bigger than 1)
-  // sudo - foreach + if
-  $list2Key = array('unit', 'sq', 'num', 'date');
-  foreach($list2Keys as $key) {
-      if($list[num] > 1) {
-          $list2[num] = $list[num];
-          unset($list[num]);
-      } else {
-          $list2[$key] = null;
-      }
-  }
-
-  $list1 = $list;
-
-  // TODO to show each key and value
-  // sudo - to display each value
-  foreach ($list1 as $list)
-  {
-    echo $list;
-  }
+}
 
 ?>
-
-
-<!-- If date looks like this -->
-<!-- data Object
-(
-    [list] => Array
-        (
-            [0] => stdClass Object
-                (
-                    [unit] => H1
-                    [sq] => 991
-                    [num] => 10
-                    [date] => 2019-01-05 18:34:25
-                )
-
-            [1] => stdClass Object
-                (
-                    [unit] => H2
-                    [sq] => 1013
-                    [num] => 1
-                    [date] => 2019-02-05 18:34:25
-                )
-        )
-  ) -->
